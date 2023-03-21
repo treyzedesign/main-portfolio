@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- carousel -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/e152785f1e.js" crossorigin="anonymous"></script>
+</head>
+<body style="width: 100%;">
+    <div>
+        <div class="">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse position-sticky pt-3 sidebar-sticky bottom-0 top-0 ">
+            <div class="text-white mt-4">
+                <div class="image-con-p text-white">
+                        <div class="image-con rounded-circle">
+                            <img src="./assets/sly.jpeg" alt="" class="profile-img rounded-circle">
+                        </div>
+                </div>
+                <div class="text-center">
+                    <h3 class="py-2 username">Sylvester Udoh</h3>
+                    <span class=" m-1 icon-box rounded-3"><a href="" class="text-white"><i class="fa-brands fa-twitter"></i></a></span>  
+                    <span class=" m-1 icon-box rounded-3"><a href="" class="text-white"><i class="fa-brands fa-facebook-f"></i></a></span>  
+                    <span class="m-1 icon-box rounded-3"><a href="" class="text-white"><i class="fa-brands fa-instagram"></i></a></span>  
+                    <span class="m-1 icon-box rounded-3"><a href="" class="text-white"><i class="fa-brands fa-github"></i></a></span>
+                    <span class="m-1 icon-box rounded-3"><a href="" class="text-white"><i class="fa-brands fa-linkedin"></i></a></span>  
+
+                </div>
+
+                <ul class="nav flex-column mt-4 ps-4">
+                    <li class="nav-items mt-4 text-white">
+                        <a class='nav-link' href="" onclick="goTo(1)" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-house pe-3"></i>
+                            <span class="">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-items mt-4 text-white">
+                        <a class="nav-link" href="#section2" onclick="goTo(2)" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation" >
+                            <i class="fa-solid fa-user-tie pe-3"></i>
+                            <span class="">About</span>
+                        </a>
+                    </li>
+                    <li class="nav-items mt-4 text-white">
+                        <a class="nav-link" href="#section3" onclick="goTo(3)" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-regular fa-file pe-3"></i>
+                            <span class="">Resume</span>
+                        </a>
+                    </li>
+                    <li class="nav-items mt-4 text-white">
+                        <a class="nav-link" href="#section4" onclick="goTo(4)" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-server pe-3"></i>
+                            <span class="">Portfolio</span>
+                        </a>
+                    </li>
+                    <li class="nav-items mt-4 text-white">
+                        <a class="nav-link" href="#section5" onclick="goTo(5)">
+                            <i class="fa-solid fa-server pe-3"></i>
+                        <span class="">Contact</span>
+                        </a>
+                        
+                    </li>
+                </ul>
+            </div>
+            </nav>
+        
+            <main class="col-md-9  info">
+                <nav class="d-flex port">
+                    <h3 class="text-white px-3 py-2"><i><b>Udoh Sylvester</b></i></h3>
+                    <button class="navbar-toggler position-absolute d-md-none collapsed open_btn " type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars text-white"></i></button>     
+                </nav>
+                <section class="section1 " id="firstsec">
+                    <div class="darker"></div>
+                    <div class="container head">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="head-text text-white ">
+                                        <div >
+                                            <h1 class="head-name">Sylvester Udoh</h1>
+                                            <h1 class="profession">I'm <span class="auto-type"></span></h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div><img src="./assets/sly.jpeg" class="head-img"/></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center"><i class="fa-solid fa-angles-down arr-d text-white" onclick="goTo(2)"></i></div>
+
+                </section>
+                <section class="section2 reveal fade-bottom py-4 px-3" id="section2">
+                    <div>
+                        <div class="about-head"><h3 class="fw-bolder">About</h3></div>
+                        <p>
+                               A professional Software engineer with extensive Java software development experience
+                            building Restful APIs that meets client business requirements. Expertise in Manual and
+                            Automation testing across all phases of Software testing life cycle. A resolute engineer with
+                            sound experience writing codes, engaging stakeholders and matching key expectations, I am
+                            proficient in developing and integrating Restful APIs that meet business demands using the
+                            SpringBoot framework as well as populating regression test suites in Selenium Hybrid
+                            Framework which entails creating test artifacts and deliverables such as test plan, test cases,
+                            test scripts, and test summary.
+                        </p>
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div><img src="./assets/sly.jpeg" class="shadow-lg" alt="" srcset="" style="width: 100%;"></div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <ul type="none">
+                                                    <li class="fs-6 py-2"><strong>Birthday: </strong> 3 March, 1995</li>
+                                                    <li class="fs-6 py-2"><strong>Website: </strong> www.example.com</li>
+                                                    <li class="fs-6 py-2"><strong>Phone: </strong> +234 810 324 9067</li>
+                                                    <li class="fs-6 py-2"><strong>City: </strong> Lagos, Nigeria</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <ul type="none">
+                                                    <li class="fs-6 py-2"><strong>Age: </strong> 28</li>
+                                                    <li class="fs-6 py-2"><strong>Degree: </strong> Bachelor</li>
+                                                    <li class="fs-6 py-2"><strong>Email: </strong> sylvestre.udoh@gmail.com</li>
+                                                    <li class="fs-6 py-2"><strong>Status: </strong> Open to work</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ps-3">
+                                        <p>
+                                            I possess adequate knowledge about database management
+                                            systems. Worked across diverse domains such as fintech, E-commerce etc. I am a
+                                            multi-dimensional individual with an ambitious and positive disposition to life
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section3 pt-5 px-3">
+                    <div class="">
+                        <div class="about-head"><h3 class="fw-bolder">Facts</h3></div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore placeat soluta quisquam exercitationem magni suscipit cumque amet atque reiciendis animi!
+                    </p> 
+                    </div>
+                    <div class="container reveal fade-right fact-con">
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-4 d-flex fact-emo flex-wrap">
+                                    <div class="fact-rotate rounded-circle shadow-lg" style="background-color: rgb(5, 31, 5);">
+                                        <i class="fa-regular fa-face-smile text-white pt-2" style="font-size: 80px;"></i>
+                                    </div>
+                                    <div class="ps-3 fact-num">
+                                        <h1><b>232</b></h1>
+                                        <p>happy clients</p>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex fact-emo flex-wrap">
+                                        <div class="fact-rotate rounded-circle shadow-lg" style="background-color: rgb(5, 31, 5);">
+                                            <i class="fa-solid fa-list-check pt-3 text-white" style="font-size: 70px;"></i>
+                                        </div>
+                                        <div class="ps-3 fact-num">
+                                            <h1><b>521</b></h1>
+                                            <p>Projects completed</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex fact-emo flex-wrap">
+                                        <div class="fact-rotate rounded-circle shadow-lg" style="background-color: rgb(5, 31, 5);">
+                                            <i class="fa-regular fa-face-smile text-white pt-2" style="font-size: 80px;"></i>
+                                        </div>
+                                        <div class="ps-3 fact-num">
+                                            <h1><b>232</b></h1>
+                                            <p>happy clients</p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                <section class="section4 pt-2 px-3 ">
+                    <div>
+                        <div class="">
+                            <div class="about-head"><h3 class="fw-bolder text-success-emphasis">Skills</h3></div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore placeat soluta quisquam exercitationem magni suscipit cumque amet atque reiciendis animi!
+                        </p> 
+                        </div>
+                        <div class="container reveal fade-bottom fact-con">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul type="none">
+                                            <li class="py-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Java</strong>
+                                                    <strong>90%</strong>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: 90%"></div>
+                                                  </div>
+                                            </li>
+                                            <li class="py-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>SpringBoot</strong>
+                                                    <strong>85%</strong>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: 85%"></div>
+                                                  </div>
+                                            </li>
+                                            <li class="py-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Selenium</strong>
+                                                    <strong>70%</strong>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: 75%"></div>
+                                                  </div>
+                                            </li>
+                                            <li class="py-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Jenkins</strong>
+                                                    <strong>80%</strong>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: 80%"></div>
+                                                  </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul type="none">
+                                            <li class="py-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Java</strong>
+                                                    <strong>90%</strong>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: 90%"></div>
+                                                  </div>
+                                            </li>
+                                            <li class="py-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>SpringBoot</strong>
+                                                    <strong>85%</strong>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: 85%"></div>
+                                                  </div>
+                                            </li>
+                                            <li class="py-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Selenium</strong>
+                                                    <strong>70%</strong>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: 75%"></div>
+                                                  </div>
+                                            </li>
+                                            <li class="py-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong>Jenkins</strong>
+                                                    <strong>80%</strong>
+                                                </div>
+                                                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: 80%"></div>
+                                                  </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section5 px-3" id="section5">
+                    <div>
+                        <div class="">
+                            <div class="about-head"><h3 class="fw-bolder fs-1">Resume</h3></div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sunt voluptatum assumenda similique accusantium. Quisquam blanditiis eveniet cumque error labore laboriosam, reprehenderit mollitia voluptatem corporis repellat hic quasi, dolorem natus quidem sunt, debitis repudiandae? Tempora dignissimos quia in velit unde consequatur deleniti doloribus aspernatur, itaque eius modi at, quos tenetur?
+                        </p> 
+                        </div>
+                        <div class="col-md-12 reveal fade-bottom">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="sumary p-1 ps-3" style="border-left: 6px solid rgb(4, 63, 4);">
+                                        <div>
+                                            <div class="about-head"><h3 class="fw-bolder fs-4">summary</h3></div>
+                                        </div>
+                                        <p>
+                                            <ul>
+                                                <li> 3 years of experience as a Java Backend Software Developer(SpringBoot).</li>
+                                                <li>2 years experience as a Software Test Engineer.</li>
+                                                <li>
+                                                    Backend development with SpringBoot framework, Hibernate framework, JPA and other ORM tools for relational mappings.
+                                                </li>
+                                                <li>
+                                                    Experience in various types of testing including Smoke testing, Sanity testing, Regression Testing, Functional Testing, and System Testing of Web-Based and Client-Server applications.
+                                                </li>
+                                                <li>Experienced in API testing using Postman and Swagger.</li>
+                                                <li>Experience in all phases of the Software Development Life Cycle (SDLC).
+                                                </li>
+                                                <li>Proficient with relational and non-relational databases such as MySQL, PostgreSQL etc.
+                                                </li>
+                                                <li> Expert in defect tracking using the Jira tool.</li>
+                                            </ul>
+                                        </p>
+                                        <div>
+                                            <div class="about-head"><h3 class="fw-bolder fs-4">Education</h3></div>
+                                        </div>
+                                        <p>
+                                            <h5 class="fw-bolder fs-5">Bachelor of Arts, Comm. arts</h5>
+                                            <h6 class=" ">Oct. 2014</h6>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore animi dignissimos autem necessitatibus. Consequuntur vero ratione minus perspiciatis provident, labore, officiis incidunt, similique voluptatum nisi atque maiores eos? Ducimus, expedita.
+                                            </p>
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                    <div class="col-md-6">
+                                        <div class="sumary p-1 ps-3" style="border-left: 6px solid rgb(4, 63, 4);">
+                                            <div>
+                                                <div class="about-head"><h3 class="fw-bolder fs-4">Experience</h3></div>
+                                            </div>
+                                            <p>
+                                                <h5 class="fw-bold fs-5">O7’ IT Solutions, Lagos – Software Development Engineer in Test</h5>
+
+                                                <ul>
+                                                    <li>  Build Restful API endpoints using using SpringBoot Framework.</li>
+                                                    <li>Backend development business logic and maintenance of application server</li>
+                                                    <li>
+                                                        Liaise with stakeholders including product owner, dev team and QA analysts.
+                                                    </li>
+                                                    <li>
+                                                        Performed Web automation using Selenium web driver framework with Chrome browser driver
+                                                    </li>
+                                                    <li> Write test cases in an Excel spreadsheet to cover test scenarios and use cases as per
+                                                        requirement.
+                                                    </li>
+                                                    <li> Participate in daily standup meetings with team members
+                                                    </li>
+                                                </ul>
+                                            </p>
+                                            <div>
+                                                <div class="about-head"><h3 class="fw-bolder fs-5">Decagon - Java Software Engineer, Lagos</h3></div>
+                                            </div>
+                                            <p>
+                                                <ul>
+                                                    <li>
+                                                        Performed requirement feasibility analysis and identification of tools and technologies.
+                                                    </li>
+                                                    <li>
+                                                        Wrote clean, scalable, maintainable and well tested codes using SpringBoot.
+                                                    </li>
+                                                    <li>
+                                                        Maintained the security and integrity of software and web applications (JWT, Session, OAuth2).
+                                                    </li>
+                                                    <li>
+                                                        Experience using Spring Data JPA to persist relational database servers such as MySQL, PostgresQL, Oracle etc
+                                                    </li>
+                                                    <li>
+                                                        Using version-controlled system Git language with GitHub and Bitbucket to manage
+                                                        the automated code.                                                        
+                                                    </li>
+                                                </ul>
+                                                
+                                            </p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section6 pt-5 px-3" id="section6">
+                    <div class="">
+                        <div class="about-head"><h3 class="fw-bolder text-success-emphasis">Portfolio</h3></div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore placeat soluta quisquam exercitationem magni suscipit cumque amet atque reiciendis animi!
+                    </p> 
+                    </div>
+                    <ul class="nav nav-pills bg-secondary px-3 py-1 rounded-3 mb-3 text-center" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link  active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">All</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">image</button>
+                        </li>
+                        <li class="nav-item " role="presentation">
+                          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">video</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="col-md-12 reveal fade-bottom">
+                                <div class="row">
+                                    <div class="col-md-3 m-2 mb-2"><img class="mx-3 shadow-lg" width="400" height="200" src="./assets/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg" style="width: 200px;"></div>
+                                    <div class="col-md-3 m-2 mb-2"><iframe width="250" class="shadow-lg" height="200" src="https://www.youtube.com/embed/06LZCBaP8pE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                                    <div class="col-md-3 m-2 mb-2"><img class="mx-3 shadow-lg"  width="400" height="200" src="./assets/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg" style="width: 200px;"></div>
+                                    <div class="col-md-3 m-2 mb-2"><iframe width="250" class="shadow-lg"  height="200" src="https://www.youtube.com/embed/06LZCBaP8pE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                                    <div class="col-md-3 m-2 mb-2"><img class="mx-3 shadow-lg" width="400" height="200" src="./assets/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg" style="width: 200px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="col-md-12 reveal fade-bottom">
+                                <div class="row">
+                                    <div class="col-md-3 m-2 mb-2"><img class="mx-3 shadow-lg" width="400" height="200" src="./assets/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg" style="width: 200px;"></div>
+                                    <div class="col-md-3 m-2 mb-2"><img class="mx-3 shadow-lg" width="400" height="200" src="./assets/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg" style="width: 200px;"></div>
+                                    <div class="col-md-3 m-2 mb-2"><img class="mx-3 shadow-lg" width="400" height="200" src="./assets/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg" style="width: 200px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div class="col-md-12 reveal fade-bottom">
+                                <div class="row">
+                                    <div class="col-md-3 m-2 mb-2"><iframe width="250" class="mx-3 me-3 shadow-lg" height="250" src="https://www.youtube.com/embed/06LZCBaP8pE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                                    <div class="col-md-3 m-2 mb-2"><iframe width="250" class="mx-3 shadow-lg" height="250" src="https://www.youtube.com/embed/mBRuMDy40Sw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </section>
+                <section class="section7 px-5 pt-4 mt-5">
+                    <div class="">
+                        <div class="about-head"><h3 class="fw-bolder text-success-emphasis">Reviews</h3></div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore placeat soluta quisquam exercitationem magni suscipit cumque amet atque reiciendis animi!
+                    </p> 
+                    </div>
+                    <!-- Carousel wrapper -->
+                    <div class="row">
+                        <div class="col-12 m-auto">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item mb-1 text-center  ">
+                                    <div class="card border-0 shadow-lg px-3">
+                                        <div class="text-center d-flex justify-content-center pt-4">
+                                            <img
+                                            class="rounded-circle shadow-1-strong mb-4"
+                                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                                            style="width: 100px;" />
+                                        </div>
+                                        <div class="">
+                                            <h5 class="mb-3">Udoh saviour</h5>
+                                            <p>fullstack Developer</p>
+                                            <p class="text-muted">
+                                                <i class="fas fa-quote-left pe-2"></i>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                                                nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                                                fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+                                                doloremque.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="card border-0 shadow-lg ">
+                                        <div class="text-center d-flex justify-content-center pt-4">
+                                            <img
+                                            class="rounded-circle shadow-1-strong mb-4"
+                                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                                            style="width: 100px;" />
+                                        </div>
+                                        <div class="text-center px-3">
+                                            <h5 class="mb-3">Ekemini Udoh</h5>
+                                            <p>QA analysts</p>
+                                            <p class="text-muted">
+                                                <i class="fas fa-quote-left pe-2"></i>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                                                nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                                                fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+                                                doloremque.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card border-0 shadow-lg ">
+                                        <div class="text-center d-flex justify-content-center pt-4">
+                                            <img
+                                            class="rounded-circle shadow-1-strong mb-4"
+                                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                                            style="width: 100px;" />
+                                        </div>
+                                        <div class="text-center px-3">
+                                            <h5 class="mb-3">Maria Kate</h5>
+                                            <p>Photographer</p>
+                                            <p class="text-muted">
+                                                <i class="fas fa-quote-left pe-2"></i>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                                                nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                                                fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+                                                doloremque.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card border-0 shadow-lg ">
+                                        <div class="text-center d-flex justify-content-center pt-4">
+                                            <img
+                                            class="rounded-circle shadow-1-strong mb-4"
+                                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                                            style="width: 100px;" />
+                                        </div>
+                                        <div class="text-center px-3">
+                                            <h5 class="mb-3">Maria Kate</h5>
+                                            <p>Photographer</p>
+                                            <p class="text-muted">
+                                                <i class="fas fa-quote-left pe-2"></i>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                                                nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                                                fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+                                                doloremque.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card border-0 shadow-lg ">
+                                        <div class="text-center d-flex justify-content-center pt-4">
+                                            <img
+                                            class="rounded-circle shadow-1-strong mb-4"
+                                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                                            style="width: 100px;" />
+                                        </div>
+                                        <div class="text-center px-3">
+                                            <h5 class="mb-3">Maria Kate</h5>
+                                            <p>Photographer</p>
+                                            <p class="text-muted">
+                                                <i class="fas fa-quote-left pe-2"></i>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                                                nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                                                fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+                                                doloremque.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card border-0 shadow-lg ">
+                                        <div class="text-center d-flex justify-content-center pt-4">
+                                            <img
+                                            class="rounded-circle shadow-1-strong mb-4"
+                                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                                            style="width: 100px;" />
+                                        </div>
+                                        <div class="text-center px-3">
+                                            <h5 class="mb-3">Maria Kate</h5>
+                                            <p>Photographer</p>
+                                            <p class="text-muted">
+                                                <i class="fas fa-quote-left pe-2"></i>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                                                nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                                                fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+                                                doloremque.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>               
+                </section>
+                <section class="section8 px-5 pt-5">
+                    <div class="pb-3">
+                        <div class="about-head"><h3 class="fw-bolder text-success-emphasis">Contact</h3></div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore placeat soluta quisquam exercitationem magni suscipit cumque amet atque reiciendis animi!
+                    </p> 
+                    </div>
+                    <div>
+                        <div class="container-fluid mt-3">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-5  shadow-lg pt-3">
+                                        <ul type="none">
+                                            <li class="d-flex">
+                                                <div><i class="fa-sharp fa-solid fa-location-dot fs-3 pe-4 con-icon"></i></div>
+                                                <div >
+                                                    <strong class="fw-bold fs-5">Location:</strong><br>
+                                                    ibeju-lekki, Lagos, Nigeria
+                                                </div>
+                                            </li>
+                                            <li class="d-flex pt-3">
+                                                <div><i class="fa-sharp fa-regular fa-envelope fs-3 pe-4 con-icon"></i></div>
+                                                <div >
+                                                    <strong class="fw-bold fs-5">Email:</strong><br>
+                                                    sylvestre.udoh@gmail.com
+                                                </div>
+                                            </li>
+                                            <li class="d-flex pt-4">
+                                                <div><i class="fa-solid fa-phone fs-3 pe-4 con-icon"></i></div>
+                                                <div >
+                                                    <strong class="fw-bold fs-5">Tel.:</strong><br>
+                                                    +234 810 324 9067
+                                                </div>
+                                            </li>
+                                            <li class="pt-3 pb-1">
+                                                <iframe style="width: 90%; height: 40vh;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=293&amp;height=285&amp;hl=en&amp;q=school%20gate%20street%20Lagos+(location)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+    
+    
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-7 ">
+                                        <div class="ps-3 pt-2">
+                                            <div class="row">
+                                                <div class="col-md-6 form-group">
+                                                   <div class="pe-3">
+                                                    <label for="">Your Name</label>
+                                                    <input type="text" class="form-control" style="border-radius: 0;">
+                                                   </div>
+                                                </div>
+                                                <div class="col-md-6 form-group">
+                                                    <div class="">
+                                                        <label for="">Your Email</label>
+                                                        <input type="email" class="form-control" style="border-radius: 0;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="form-group pt-2">
+                                                    <label for="">Subject</label>
+                                                    <input type="text" class="form-control" style="border-radius: 0;">
+                                                </div>
+                                                <div class="form-group pt-2">
+                                                    <label for="">Subject</label>
+                                                    <textarea name="body" class="form-control" id="" rows="10"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="text-center pt-4">
+                                                <button class="btn btn-outline-success">send message</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </section>
+                <footer class="text-white text-center">
+                    <div>
+                        <small><i class="fa-regular fa-copyright"></i> copyright by Treyzedesign</small><br>
+                        <small class="pt-2">designed by Udoh saviour</small>
+                    </div>
+                </footer>
+            </main>
+        </div>
+          
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script>
+        // autotyper using typed.js
+          var typed = new Typed(".auto-type", {
+            strings: ["a Programmer", "a Tester", "an Artist", "a freelancer"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            looped: true
+            })
+
+        // function for scroll aniimations
+            function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
+
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 50;
+
+                    if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                    } else {
+                    reveals[i].classList.remove("active");
+                    }
+                }
+                }
+
+            window.addEventListener("scroll", reveal);
+            function change() {
+                reveal()
+            }
+            function goTo(params) {
+                switch (params) {
+                    case 1:
+                        window.location.replace("#firstsec")
+                        break;
+                    case 2 :
+                        window.location.replace("#section2")
+                        break;
+                    case 3 :
+                        window.location.replace("#section5")
+                        break;
+                    case 4 :
+                        window.location.replace("#section6")
+                        break;
+                    default:
+                        break;
+                }
+            }
+            
+            $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            rewind: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            animateIn: true,
+            dotsEach: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+            
+    </script>
+</body>
+</html>
