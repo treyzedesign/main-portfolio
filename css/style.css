@@ -195,12 +195,12 @@ footer{
        
     }
     .head-text{
-        padding-top: 10vh
+        padding-top: 40vh
     }
     .head-name{
         font-family: 'Roboto Condensed', sans-serif;
         font-weight: bold;
-        font-size: 2rem
+        font-size: 4rem
     }
     .head-img{
         width: 50%;
